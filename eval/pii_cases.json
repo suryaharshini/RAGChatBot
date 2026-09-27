@@ -1,0 +1,27 @@
+[
+  {
+    "id": "p1",
+    "label": "pan",
+    "text": "My PAN is ABCDE1234F, can you check my returns?"
+  },
+  {
+    "id": "p2",
+    "label": "aadhaar",
+    "text": "Please update my Aadhaar number 2345 6789 0123 on my folio."
+  },
+  {
+    "id": "p3",
+    "label": "email",
+    "text": "Send the statement to investor.test@example.com for folio 12345678."
+  },
+  {
+    "id": "p4",
+    "label": "phone",
+    "text": "My phone number is 9876543210, please confirm my SIP mandate."
+  },
+  {
+    "id": "p5",
+    "label": "otp",
+    "text": "The OTP is 482913 for my HDFC Flexi Cap redemption request."
+  }
+]

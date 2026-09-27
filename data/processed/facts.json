@@ -1,0 +1,734 @@
+{
+  "hdfc_large_cap": {
+    "scheme_id": "hdfc_large_cap",
+    "scheme_name": "HDFC Large Cap Fund Direct Growth",
+    "plan_type": "Direct",
+    "category": "Equity Large Cap",
+    "category_raw": "Equity",
+    "sub_category": "Large Cap",
+    "sub_sub_category": "",
+    "fund_house": "HDFC Mutual Fund",
+    "nav": "\u20b91,189.08",
+    "nav_date": "25-Sep-2026",
+    "fund_aum": "\u20b939,933.37 Cr",
+    "amc_aum_total": "\u20b99,86,236.84 Cr",
+    "amc_rank": "2",
+    "expense_ratio": "1.03%",
+    "groww_rating": 4,
+    "risk_rating": "Very High",
+    "min_first_inv": "\u20b9100",
+    "min_additional_inv": "\u20b9100",
+    "min_sip": "\u20b9100",
+    "sip_multiplier": "\u20b91",
+    "purchase_multiplier": "\u20b91",
+    "min_stp_in": "\u20b91,000",
+    "exit_load": "1% if redeemed within 1 year",
+    "exit_load_history": [
+      {
+        "as_on_date": "2015-05-08T00:00:00",
+        "note": "1% if redeemed within 1 year"
+      },
+      {
+        "as_on_date": "2015-02-16T00:00:00",
+        "note": "1% if redeemed within 18 months"
+      },
+      {
+        "as_on_date": "2013-01-01T00:00:00",
+        "note": "1% if redeemed within 1 year"
+      }
+    ],
+    "stamp_duty": "0.005% (from July 1st, 2020)",
+    "lock_in": "None",
+    "benchmark": "NIFTY 100 Total Return Index",
+    "benchmark_short": "NIFTY 100 TRI",
+    "scheme_launch_date": "01-Jan-2013",
+    "amc_incorporation_date": "10 Dec 1999",
+    "amc_name": "HDFC Mutual Fund",
+    "custodian": "HDFC Bank",
+    "rta": "Cams",
+    "investment_objective": "The scheme seeks to provide long-term capital appreciation/income by investing predominantly in Large-Cap companies.",
+    "category_helper_text": "Invests in stocks as per Contrarian investment strategy",
+    "tax_note": "If you redeem within one year, returns are taxed at 20%. If you redeem after one year, returns exceeding Rs 1.25 lakh in a financial year are taxed at 12.5%.",
+    "holdings_count": 50,
+    "holdings_portfolio_date": "31 Aug 2026",
+    "top_holdings": [
+      {
+        "company": "ICICI Bank Ltd",
+        "sector": "Financial",
+        "instrument": "Equity",
+        "weight_pct": 10.05
+      },
+      {
+        "company": "HDFC Bank Ltd",
+        "sector": "Financial",
+        "instrument": "Equity",
+        "weight_pct": 6.88
+      },
+      {
+        "company": "Bharti Airtel Ltd",
+        "sector": "Technology",
+        "instrument": "Equity",
+        "weight_pct": 6.23
+      },
+      {
+        "company": "Kotak Mahindra Bank Ltd",
+        "sector": "Financial",
+        "instrument": "Equity",
+        "weight_pct": 5.71
+      },
+      {
+        "company": "Titan Company Ltd",
+        "sector": "Consumer Discretionary",
+        "instrument": "Equity",
+        "weight_pct": 5.27
+      }
+    ],
+    "sector_allocation": [
+      {
+        "sector": "Financial",
+        "weight_pct": 39.07
+      },
+      {
+        "sector": "Consumer Discretionary",
+        "weight_pct": 13.09
+      },
+      {
+        "sector": "Technology",
+        "weight_pct": 12.78
+      },
+      {
+        "sector": "Healthcare",
+        "weight_pct": 9.95
+      },
+      {
+        "sector": "Industrials",
+        "weight_pct": 8.23
+      },
+      {
+        "sector": "Energy & Utilities",
+        "weight_pct": 6.61
+      },
+      {
+        "sector": "Consumer Staples",
+        "weight_pct": 5.12
+      },
+      {
+        "sector": "Materials",
+        "weight_pct": 3.36
+      },
+      {
+        "sector": "Unspecified",
+        "weight_pct": 0.94
+      },
+      {
+        "sector": "Entities",
+        "weight_pct": 0.48
+      },
+      {
+        "sector": "Real Estate",
+        "weight_pct": 0.37
+      }
+    ],
+    "fund_managers": [
+      {
+        "name": "Rahul Baijal",
+        "tenure_from": "Jul 2022",
+        "education": "Mr. Baijal has done PGDM(MBA) from IIM Calcutta and is an engineering graduate of Delhi college of Engineering"
+      },
+      {
+        "name": "Dhruv Muchhal",
+        "tenure_from": "Jun 2023",
+        "education": "Mr. Dhruv has done B.Com, CA and CFA"
+      }
+    ],
+    "nfo_risk": "Moderately High Riskometer"
+  },
+  "hdfc_flexi_cap": {
+    "scheme_id": "hdfc_flexi_cap",
+    "scheme_name": "HDFC Flexi Cap Direct Plan Growth",
+    "plan_type": "Direct",
+    "category": "Equity Flexi Cap",
+    "category_raw": "Equity",
+    "sub_category": "Flexi Cap",
+    "sub_sub_category": "",
+    "fund_house": "HDFC Mutual Fund",
+    "nav": "\u20b92,214.57",
+    "nav_date": "25-Sep-2026",
+    "fund_aum": "\u20b91,13,606.47 Cr",
+    "amc_aum_total": "\u20b99,86,236.84 Cr",
+    "amc_rank": "2",
+    "expense_ratio": "0.77%",
+    "groww_rating": 5,
+    "risk_rating": "Very High",
+    "min_first_inv": "\u20b9100",
+    "min_additional_inv": "\u20b9100",
+    "min_sip": "\u20b9100",
+    "sip_multiplier": "\u20b91",
+    "purchase_multiplier": "\u20b91",
+    "min_stp_in": "\u20b91,000",
+    "exit_load": "1% if redeemed within 1 year",
+    "exit_load_history": [
+      {
+        "as_on_date": "2013-01-01T00:00:00",
+        "note": "1% if redeemed within 1 year"
+      }
+    ],
+    "stamp_duty": "0.005% (from July 1st, 2020)",
+    "lock_in": "None",
+    "benchmark": "NIFTY 500 Total Return Index",
+    "benchmark_short": "NIFTY 500 TRI",
+    "scheme_launch_date": "01-Jan-2013",
+    "amc_incorporation_date": "10 Dec 1999",
+    "amc_name": "HDFC Mutual Fund",
+    "custodian": "Deutsche Bank",
+    "rta": "Cams",
+    "investment_objective": "The scheme seeks to generate capital appreciation / income from a portfolio, predominantly invested in equity & equity related instruments.",
+    "category_helper_text": "Invests in stocks as per Contrarian investment strategy",
+    "tax_note": "If you redeem within one year, returns are taxed at 20%. If you redeem after one year, returns exceeding Rs 1.25 lakh in a financial year are taxed at 12.5%.",
+    "holdings_count": 86,
+    "holdings_portfolio_date": "31 Aug 2026",
+    "top_holdings": [
+      {
+        "company": "ICICI Bank Ltd",
+        "sector": "Financial",
+        "instrument": "Equity",
+        "weight_pct": 9.19386133
+      },
+      {
+        "company": "Axis Bank Ltd",
+        "sector": "Financial",
+        "instrument": "Equity",
+        "weight_pct": 6.19129075
+      },
+      {
+        "company": "HDFC Bank Ltd",
+        "sector": "Financial",
+        "instrument": "Equity",
+        "weight_pct": 5.71320661
+      },
+      {
+        "company": "State Bank of India",
+        "sector": "Financial",
+        "instrument": "Equity",
+        "weight_pct": 4.15948016
+      },
+      {
+        "company": "Zomato Ltd",
+        "sector": "Technology",
+        "instrument": "Equity",
+        "weight_pct": 3.38619644
+      }
+    ],
+    "sector_allocation": [
+      {
+        "sector": "Financial",
+        "weight_pct": 35.27
+      },
+      {
+        "sector": "Consumer Discretionary",
+        "weight_pct": 15.03
+      },
+      {
+        "sector": "Healthcare",
+        "weight_pct": 12.48
+      },
+      {
+        "sector": "Technology",
+        "weight_pct": 11.08
+      },
+      {
+        "sector": "Industrials",
+        "weight_pct": 10.61
+      },
+      {
+        "sector": "Materials",
+        "weight_pct": 4.74
+      },
+      {
+        "sector": "Energy & Utilities",
+        "weight_pct": 4.53
+      },
+      {
+        "sector": "Unspecified",
+        "weight_pct": 2.47
+      },
+      {
+        "sector": "Consumer Staples",
+        "weight_pct": 2.02
+      },
+      {
+        "sector": "Real Estate",
+        "weight_pct": 1.05
+      },
+      {
+        "sector": "Entities",
+        "weight_pct": 0.45
+      },
+      {
+        "sector": "Diversified",
+        "weight_pct": 0.26
+      }
+    ],
+    "fund_managers": [
+      {
+        "name": "Dhruv Muchhal",
+        "tenure_from": "Jun 2023",
+        "education": "Mr. Dhruv has done B.Com, CA and CFA"
+      },
+      {
+        "name": "Amit Ganatra",
+        "tenure_from": "Feb 2026",
+        "education": "Mr. Ganatra holds a Commerce degree and is a Charted Accountant. He is also a Chartered Financial Analyst from AIMR."
+      }
+    ],
+    "nfo_risk": "Moderately High"
+  },
+  "hdfc_elss": {
+    "scheme_id": "hdfc_elss",
+    "scheme_name": "HDFC ELSS Tax Saver Fund Direct Plan Growth",
+    "plan_type": "Direct",
+    "category": "Equity ELSS",
+    "category_raw": "Equity",
+    "sub_category": "ELSS",
+    "sub_sub_category": "",
+    "fund_house": "HDFC Mutual Fund",
+    "nav": "\u20b91,447.38",
+    "nav_date": "25-Sep-2026",
+    "fund_aum": "\u20b915,991.78 Cr",
+    "amc_aum_total": "\u20b99,86,236.84 Cr",
+    "amc_rank": "2",
+    "expense_ratio": "1.21%",
+    "groww_rating": 5,
+    "risk_rating": "Very High",
+    "min_first_inv": "\u20b9500",
+    "min_additional_inv": "\u20b9500",
+    "min_sip": "\u20b9500",
+    "sip_multiplier": "\u20b9500",
+    "purchase_multiplier": "\u20b9500",
+    "min_stp_in": "\u20b9500",
+    "exit_load": "Nil",
+    "exit_load_history": [
+      {
+        "as_on_date": "2013-01-01T00:00:00",
+        "note": "Not available"
+      }
+    ],
+    "stamp_duty": "0.005% (from July 1st, 2020)",
+    "lock_in": "3 years",
+    "benchmark": "NIFTY 500 Total Return Index",
+    "benchmark_short": "NIFTY 500 TRI",
+    "scheme_launch_date": "01-Jan-2013",
+    "amc_incorporation_date": "10 Dec 1999",
+    "amc_name": "HDFC Mutual Fund",
+    "custodian": "Deutsche Bank",
+    "rta": "Cams",
+    "investment_objective": "The scheme seeks to generate capital appreciation / income from a portfolio, comprising predominantly of equity & equity related instruments.",
+    "category_helper_text": "Invests in stocks as per Contrarian investment strategy",
+    "tax_note": "If you redeem within one year, returns are taxed at 20%. If you redeem after one year, returns exceeding Rs 1.25 lakh in a financial year are taxed at 12.5%.",
+    "holdings_count": 65,
+    "holdings_portfolio_date": "31 Aug 2026",
+    "top_holdings": [
+      {
+        "company": "ICICI Bank Ltd",
+        "sector": "Financial",
+        "instrument": "Equity",
+        "weight_pct": 9.32
+      },
+      {
+        "company": "HDFC Bank Ltd",
+        "sector": "Financial",
+        "instrument": "Equity",
+        "weight_pct": 7.36
+      },
+      {
+        "company": "Axis Bank Ltd",
+        "sector": "Financial",
+        "instrument": "Equity",
+        "weight_pct": 6.5
+      },
+      {
+        "company": "Maruti Suzuki India Ltd",
+        "sector": "Consumer Discretionary",
+        "instrument": "Equity",
+        "weight_pct": 4.66
+      },
+      {
+        "company": "State Bank of India",
+        "sector": "Financial",
+        "instrument": "Equity",
+        "weight_pct": 4.64
+      }
+    ],
+    "sector_allocation": [
+      {
+        "sector": "Financial",
+        "weight_pct": 42.67
+      },
+      {
+        "sector": "Consumer Discretionary",
+        "weight_pct": 16.26
+      },
+      {
+        "sector": "Technology",
+        "weight_pct": 13.22
+      },
+      {
+        "sector": "Healthcare",
+        "weight_pct": 8.24
+      },
+      {
+        "sector": "Industrials",
+        "weight_pct": 5.12
+      },
+      {
+        "sector": "Energy & Utilities",
+        "weight_pct": 4.56
+      },
+      {
+        "sector": "Materials",
+        "weight_pct": 4.36
+      },
+      {
+        "sector": "Consumer Staples",
+        "weight_pct": 4.26
+      },
+      {
+        "sector": "Unspecified",
+        "weight_pct": 0.99
+      },
+      {
+        "sector": "Entities",
+        "weight_pct": 0.32
+      }
+    ],
+    "fund_managers": [
+      {
+        "name": "Amar Kalkundrikar",
+        "tenure_from": "Dec 2025",
+        "education": "Mr. Kalkundrikar has done B.Com, CA, CFA, and MBA from Columbia Business School."
+      },
+      {
+        "name": "Dhruv Muchhal",
+        "tenure_from": "Jun 2023",
+        "education": "Mr. Dhruv has done B.Com, CA and CFA"
+      }
+    ],
+    "nfo_risk": "Moderately High"
+  },
+  "hdfc_small_cap": {
+    "scheme_id": "hdfc_small_cap",
+    "scheme_name": "HDFC Small Cap Fund Direct Growth",
+    "plan_type": "Direct",
+    "category": "Equity Small Cap",
+    "category_raw": "Equity",
+    "sub_category": "Small Cap",
+    "sub_sub_category": "",
+    "fund_house": "HDFC Mutual Fund",
+    "nav": "\u20b9159.82",
+    "nav_date": "25-Sep-2026",
+    "fund_aum": "\u20b941,890.86 Cr",
+    "amc_aum_total": "\u20b99,86,236.84 Cr",
+    "amc_rank": "2",
+    "expense_ratio": "0.78%",
+    "groww_rating": 3,
+    "risk_rating": "Very High",
+    "min_first_inv": "\u20b9100",
+    "min_additional_inv": "\u20b9100",
+    "min_sip": "\u20b9100",
+    "sip_multiplier": "\u20b91",
+    "purchase_multiplier": "\u20b91",
+    "min_stp_in": "\u20b91,000",
+    "exit_load": "1% if redeemed within 1 year",
+    "exit_load_history": [
+      {
+        "as_on_date": "2015-05-08T00:00:00",
+        "note": "1% if redeemed within 1 year"
+      },
+      {
+        "as_on_date": "2014-12-18T00:00:00",
+        "note": "2% if redeemed within 12 months, 1% if redeemed after 12 months but within 24 months and 0.50% if redeemed after 24 months but within 36 months"
+      },
+      {
+        "as_on_date": "2014-07-01T00:00:00",
+        "note": "2% if redeemed within 12 months and 1% if redeemed after 12 months but before 18 months"
+      },
+      {
+        "as_on_date": "2013-01-01T00:00:00",
+        "note": "1% if redeemed within 1 year"
+      }
+    ],
+    "stamp_duty": "0.005% (from July 1st, 2020)",
+    "lock_in": "None",
+    "benchmark": "BSE 250 SmallCap Total Return Index",
+    "benchmark_short": "BSE 250 SmallCap TRI",
+    "scheme_launch_date": "01-Jan-2013",
+    "amc_incorporation_date": "10 Dec 1999",
+    "amc_name": "HDFC Mutual Fund",
+    "custodian": "Citibank NA",
+    "rta": "Cams",
+    "investment_objective": "The scheme seeks to provide long-term capital appreciation /income by investing predominantly in Small-Cap companies.",
+    "category_helper_text": "Invests in stocks as per Contrarian investment strategy",
+    "tax_note": "If you redeem within one year, returns are taxed at 20%. If you redeem after one year, returns exceeding Rs 1.25 lakh in a financial year are taxed at 12.5%.",
+    "holdings_count": 87,
+    "holdings_portfolio_date": "31 Aug 2026",
+    "top_holdings": [
+      {
+        "company": "Repo",
+        "sector": "Unspecified",
+        "instrument": "Repo",
+        "weight_pct": 10.25
+      },
+      {
+        "company": "Firstsource Solutions Ltd",
+        "sector": "Industrials",
+        "instrument": "Equity",
+        "weight_pct": 3.71
+      },
+      {
+        "company": "Aster DM Healthcare Ltd",
+        "sector": "Healthcare",
+        "instrument": "Equity",
+        "weight_pct": 3.56
+      },
+      {
+        "company": "Gabriel India Ltd",
+        "sector": "Consumer Discretionary",
+        "instrument": "Equity",
+        "weight_pct": 3.25
+      },
+      {
+        "company": "eClerx Services Ltd",
+        "sector": "Technology",
+        "instrument": "Equity",
+        "weight_pct": 3.09
+      }
+    ],
+    "sector_allocation": [
+      {
+        "sector": "Industrials",
+        "weight_pct": 21.62
+      },
+      {
+        "sector": "Consumer Discretionary",
+        "weight_pct": 20.59
+      },
+      {
+        "sector": "Financial",
+        "weight_pct": 12.37
+      },
+      {
+        "sector": "Healthcare",
+        "weight_pct": 11.28
+      },
+      {
+        "sector": "Unspecified",
+        "weight_pct": 10.36
+      },
+      {
+        "sector": "Materials",
+        "weight_pct": 8.02
+      },
+      {
+        "sector": "Technology",
+        "weight_pct": 7.24
+      },
+      {
+        "sector": "Consumer Staples",
+        "weight_pct": 4.72
+      },
+      {
+        "sector": "Diversified",
+        "weight_pct": 2.39
+      },
+      {
+        "sector": "Energy & Utilities",
+        "weight_pct": 1.41
+      }
+    ],
+    "fund_managers": [
+      {
+        "name": "Dhruv Muchhal",
+        "tenure_from": "Jun 2023",
+        "education": "Mr. Dhruv has done B.Com, CA and CFA"
+      },
+      {
+        "name": "Chirag Setalvad",
+        "tenure_from": "Jun 2014",
+        "education": "Mr. Setalvad is a B. Sc and MBA from University of North Carolina."
+      }
+    ],
+    "nfo_risk": "Moderately High Riskometer"
+  },
+  "hdfc_balanced_advantage": {
+    "scheme_id": "hdfc_balanced_advantage",
+    "scheme_name": "HDFC Balanced Advantage Fund Direct Growth",
+    "plan_type": "Direct",
+    "category": "Hybrid Dynamic Asset Allocation",
+    "category_raw": "Hybrid",
+    "sub_category": "Dynamic Asset Allocation",
+    "sub_sub_category": "",
+    "fund_house": "HDFC Mutual Fund",
+    "nav": "\u20b9557.73",
+    "nav_date": "25-Sep-2026",
+    "fund_aum": "\u20b91,07,295.79 Cr",
+    "amc_aum_total": "\u20b99,86,236.84 Cr",
+    "amc_rank": "2",
+    "expense_ratio": "0.78%",
+    "groww_rating": 5,
+    "risk_rating": "Very High",
+    "min_first_inv": "\u20b9100",
+    "min_additional_inv": "\u20b9100",
+    "min_sip": "\u20b9100",
+    "sip_multiplier": "\u20b91",
+    "purchase_multiplier": "\u20b91",
+    "min_stp_in": "\u20b91,000",
+    "exit_load": "excess of 15% of the investment,1% will be charged for redemption within 1 year.",
+    "exit_load_history": [
+      {
+        "as_on_date": "2018-06-01T00:00:00",
+        "note": "excess of 15% of the investment,1% will be charged for redemption within 1 year."
+      },
+      {
+        "as_on_date": "2015-05-08T00:00:00",
+        "note": "1% if redeemed within 1 year"
+      },
+      {
+        "as_on_date": "2014-12-18T00:00:00",
+        "note": "2% if redeemed within 12 months, 1% if redeemed after 12 months but within 24 months and 0.50% if redeemed after 24 months but within 36 months"
+      },
+      {
+        "as_on_date": "2013-01-01T00:00:00",
+        "note": "1% if redeemed within 1 year"
+      }
+    ],
+    "stamp_duty": "0.005% (from July 1st, 2020)",
+    "lock_in": "None",
+    "benchmark": "NIFTY 50 Hybrid Composite Debt 50:50 Index",
+    "benchmark_short": "NIFTY 50 Hybrid Composite Debt 50:50 Index",
+    "scheme_launch_date": "01-Jan-2013",
+    "amc_incorporation_date": "10 Dec 1999",
+    "amc_name": "HDFC Mutual Fund",
+    "custodian": "HDFC Bank",
+    "rta": "Cams",
+    "investment_objective": "The Scheme seeks to provide long term capital appreciation / income from a dynamic mix of equity and debt investments.",
+    "category_helper_text": "Invests in stocks as per Contrarian investment strategy",
+    "tax_note": "If you redeem within one year, returns are taxed at 20%. If you redeem after one year, returns exceeding Rs 1.25 lakh in a financial year are taxed at 12.5%.",
+    "holdings_count": 326,
+    "holdings_portfolio_date": "31 Aug 2026",
+    "top_holdings": [
+      {
+        "company": "ICICI Bank Ltd",
+        "sector": "Financial",
+        "instrument": "Equity",
+        "weight_pct": 5.31814416
+      },
+      {
+        "company": "HDFC Bank Ltd",
+        "sector": "Financial",
+        "instrument": "Equity",
+        "weight_pct": 4.12759607
+      },
+      {
+        "company": "Reliance Industries Ltd",
+        "sector": "Energy & Utilities",
+        "instrument": "Equity",
+        "weight_pct": 3.73716399
+      },
+      {
+        "company": "State Bank of India",
+        "sector": "Financial",
+        "instrument": "Equity",
+        "weight_pct": 3.45773113
+      },
+      {
+        "company": "Bharti Airtel Ltd",
+        "sector": "Technology",
+        "instrument": "Equity",
+        "weight_pct": 2.92537623
+      }
+    ],
+    "sector_allocation": [
+      {
+        "sector": "Financial",
+        "weight_pct": 39.65
+      },
+      {
+        "sector": "Industrials",
+        "weight_pct": 11.2
+      },
+      {
+        "sector": "Technology",
+        "weight_pct": 10.08
+      },
+      {
+        "sector": "Energy & Utilities",
+        "weight_pct": 9.47
+      },
+      {
+        "sector": "Consumer Discretionary",
+        "weight_pct": 6.11
+      },
+      {
+        "sector": "Healthcare",
+        "weight_pct": 5.6
+      },
+      {
+        "sector": "Entities",
+        "weight_pct": 5.41
+      },
+      {
+        "sector": "Materials",
+        "weight_pct": 5.14
+      },
+      {
+        "sector": "Consumer Staples",
+        "weight_pct": 2.63
+      },
+      {
+        "sector": "Unspecified",
+        "weight_pct": 2.41
+      },
+      {
+        "sector": "Real Estate",
+        "weight_pct": 1.67
+      },
+      {
+        "sector": "Diversified",
+        "weight_pct": 0.63
+      }
+    ],
+    "fund_managers": [
+      {
+        "name": "Anil Bamboli",
+        "tenure_from": "Jul 2022",
+        "education": "Mr. Bamboli is a CFA from Association for Investment Management and Research, U.S.A, Masters in Management Studies (Finance) and a Graduate in Cost and Works Accountant from ICWAI."
+      },
+      {
+        "name": "Arun Agarwal",
+        "tenure_from": "Oct 2022",
+        "education": "Mr. Agarwal is a B.Com. and Chartered Accountant"
+      },
+      {
+        "name": "Dhruv Muchhal",
+        "tenure_from": "Jun 2023",
+        "education": "Mr. Dhruv has done B.Com, CA and CFA"
+      },
+      {
+        "name": "Nandita Menezes",
+        "tenure_from": "Mar 2025",
+        "education": "CA (ICAI, INDIA), B.Com (University of Mumbai)"
+      },
+      {
+        "name": "Gopal Agrawal",
+        "tenure_from": "Jul 2022",
+        "education": "Mr.Agrawal is a  B.E and MBM."
+      },
+      {
+        "name": "Ihab Dalwai",
+        "tenure_from": "Sep 2026",
+        "education": "Mr. Dalwai is a Chartered Accountant."
+      }
+    ],
+    "nfo_risk": "Moderately High Riskometer"
+  }
+}

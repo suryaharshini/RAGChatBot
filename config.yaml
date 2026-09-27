@@ -1,0 +1,84 @@
+project:
+  name: Groww MF-Guide
+  amc: HDFC Mutual Fund
+  mode: snapshot
+
+sources:
+  allowlist:
+    - scheme_id: hdfc_large_cap
+      category: Large Cap
+      scheme_name: HDFC Large Cap Fund Direct Growth
+      url: https://groww.in/mutual-funds/hdfc-large-cap-fund-direct-growth
+    - scheme_id: hdfc_flexi_cap
+      category: Flexi Cap
+      scheme_name: HDFC Flexi Cap Direct Plan Growth
+      url: https://groww.in/mutual-funds/hdfc-equity-fund-direct-growth
+    - scheme_id: hdfc_elss
+      category: ELSS
+      scheme_name: HDFC ELSS Tax Saver Fund Direct Plan Growth
+      url: https://groww.in/mutual-funds/hdfc-elss-tax-saver-fund-direct-plan-growth
+    - scheme_id: hdfc_small_cap
+      category: Small Cap
+      scheme_name: HDFC Small Cap Fund Direct Growth
+      url: https://groww.in/mutual-funds/hdfc-small-cap-fund-direct-growth
+    - scheme_id: hdfc_balanced_advantage
+      category: Balanced Advantage
+      scheme_name: HDFC Balanced Advantage Fund Direct Growth
+      url: https://groww.in/mutual-funds/hdfc-balanced-advantage-fund-direct-growth
+  user_agent: "GrowwMFGuide/0.1 (class project; contact: repo README)"
+  timeout_s: 20
+  max_retries: 3
+
+load:
+  drop_selectors:
+    - nav
+    - header
+    - footer
+    - aside
+    - "[data-testid*='compare']"
+    - "[class*='return-calculator']"
+    - "[class*='understand-terms']"
+  min_text_chars: 1500
+
+chunk:
+  strategy: auto
+  semantic_available: true
+  size_tokens: 200
+  overlap_tokens: 40
+  separators: ["\n\n", "\n", ". ", " ", ""]
+  never_split: [label_value_pair, holdings_row]
+  holdings_mode: sector_summary
+
+embed:
+  model_id: sentence-transformers/all-MiniLM-L6-v2
+  dim: 384
+  max_seq_length: 256
+  prefix_template: "{scheme_name} ({category}). {text}"
+  normalize: true
+  batch_size: 32
+  assert_no_truncation: true
+
+store:
+  backend: chromadb
+  path: ./chroma_db
+  collection: hdfc_mf_faq
+  metric: cosine
+
+retrieve:
+  top_k: 6
+  mmr_lambda: 0.3
+  oversample_factor: 3
+  sim_floor: 0.30
+
+generate:
+  max_sentences: 3
+  temperature: 0.0
+  max_tokens: 220
+  citations: exactly_one
+  retry_on_validation_failure: 1
+  require_scheme_and_plan_in_answer: true
+
+guards:
+  pii_patterns_enabled: true
+  redact_pii_from_logs: true
+  max_query_chars: 500
