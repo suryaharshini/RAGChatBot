@@ -51,7 +51,10 @@ no root-directory setting for a single-repo service; leave it at the repo root.
 | Start Command | `streamlit run app/streamlit_app.py --server.port $PORT` |
 | Health Check Path | `/_stcore/health` |
 
-Environment: `PYTHON_VERSION=3.9.6` (also pinned by `runtime.txt`).
+Environment: **no manual setting needed.** Python is pinned by `.python-version`
+(`3.12.14`), which Render reads at build time. Do not add a `runtime.txt` —
+Render ignores it, and the build silently falls back to Render's default
+Python, which is currently 3.14.
 
 Environment variables: the three from the table above, entered in the Render
 dashboard as secrets.
@@ -81,6 +84,41 @@ bound resolves to the CUDA build and defeats the extra index.
 Even CPU-only, the dependency tree plus the `all-MiniLM-L6-v2` model download
 (~90MB) exceeds Render's free instance (512MB RAM / 0.5GB disk). **Use a paid
 instance**; Starter is the realistic floor.
+
+### The `torch==2.6.0` / Python version coupling
+
+`torch==2.6.0` and the Python version are not independent choices. The CPU
+channel publishes `2.6.0+cpu` for cp39 through cp313, but **not for cp314**.
+On Python 3.14 the build therefore fails with:
+
+```
+ERROR: Could not find a version that satisfies the requirement torch==2.6.0
+(from versions: 2.9.0, 2.9.1, 2.10.0, 2.11.0, 2.12.0, 2.12.1, 2.13.0, 2.14.0)
+```
+
+That list starting at 2.9.0 is the tell: it means the build is running on 3.14
+regardless of what the repository pins. Verified resolution for
+`torch==2.6.0` with the full dependency set:
+
+| Python | Resolves? |
+|---|---|
+| 3.11 | yes |
+| 3.12 | yes (pinned in `.python-version`) |
+| 3.13 | yes |
+| 3.14 | **no** — no cp314 wheel |
+
+If a future dependency forces a Python upgrade, either raise the `torch` pin to
+2.9.0+ and re-check for `nvidia-*` in a dry run, or keep the version in
+`.python-version` in sync with the `torch` pin. To check a candidate before
+deploying:
+
+```bash
+pip install --dry-run --python-version 3.14 --only-binary=:all: \
+  --target /tmp/out -r requirements.txt
+```
+
+Confirm the `Would install ...` line lists `torch-<version>+cpu` and no
+`nvidia-*` packages.
 
 ---
 
