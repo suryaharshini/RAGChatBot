@@ -10,6 +10,80 @@
 
 ---
 
+## 0. Setup & Deployment
+
+### Local run
+
+```bash
+python3 -m venv .venv
+.venv/bin/pip install -r requirements.txt
+python -m scripts.ingest          # builds the Chroma index from the 5 allowlisted pages
+./run_app.sh                      # http://localhost:8501
+```
+
+`scripts/ingest.py` re-fetches from the allowlist when `data/raw/` is absent, so a
+fresh clone works with no extra flags. `chroma_db/` and `data/raw/` are
+gitignored, so **ingest must run before the app can answer anything**.
+
+### Environment variables
+
+Set these wherever the app runs. There is no `.env.example` in the repository
+(it is untracked), so record them here instead:
+
+| Variable | Value | Required |
+|---|---|---|
+| `LLM_PROVIDER` | `groq` | yes — omit or set `fake` for canned responses |
+| `LLM_MODEL` | `qwen/qwen3.8-27b` | yes |
+| `GROQ_API_KEY` | your key | yes when `LLM_PROVIDER=groq` |
+
+Locally these go in a gitignored `.env`, which the app loads via
+`python-dotenv`. Stages 1–4 (ingest) never touch these, so ingest is safe at
+build time with no secrets present.
+
+### Render
+
+Create a **Web Service** and point it at `suryaharshini/RAGChatBot`. Render has
+no root-directory setting for a single-repo service; leave it at the repo root.
+
+| Setting | Value |
+|---|---|
+| Build Command | `pip install -r requirements.txt && python -m scripts.ingest` |
+| Start Command | `streamlit run app/streamlit_app.py --server.port $PORT` |
+| Health Check Path | `/_stcore/health` |
+
+Environment: `PYTHON_VERSION=3.9.6` (also pinned by `runtime.txt`).
+
+Environment variables: the three from the table above, entered in the Render
+dashboard as secrets.
+
+Why the start command looks this way:
+
+- **Do not use `./run_app.sh` on Render.** It hardcodes `.venv/`, which does not
+  exist on a Render service, and it exits with setup instructions when the venv
+  is missing.
+- **No `--server.address 0.0.0.0` needed.** `.streamlit/config.toml` sets
+  `address = "0.0.0.0"`, so Streamlit binds all interfaces. Verified that
+  `STREAMLIT_SERVER_PORT` (and `--server.port`) still overrides the file's
+  `port = 8501`, so Render's injected `$PORT` wins.
+- **Ingest belongs in the build**, not at startup, because the Chroma index is
+  gitignored. Building it at startup would add a multi-minute cold start and
+  race against Render's health check.
+- **Do not cache `chroma_db/`.** A cached index can outlive a change to the
+  source pages; rebuilding each deploy takes seconds and cannot go stale.
+
+### Sizing
+
+`requirements.txt` points at PyTorch's CPU channel and pins `torch==2.6.0`.
+The default Linux `torch` wheel is the CUDA build, which pulls ~2.5GB of
+`nvidia-*` packages. The CPU channel's newest cp39 wheel is 2.6.0 — a higher
+bound resolves to the CUDA build and defeats the extra index.
+
+Even CPU-only, the dependency tree plus the `all-MiniLM-L6-v2` model download
+(~90MB) exceeds Render's free instance (512MB RAM / 0.5GB disk). **Use a paid
+instance**; Starter is the realistic floor.
+
+---
+
 ## 1. How to Use This Document
 
 Each phase has six fixed sections:

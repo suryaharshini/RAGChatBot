@@ -1,0 +1,14 @@
+# Streamlit server settings, shared by local runs and Render.
+#
+# Render injects $PORT and routes traffic to the container, so the server must
+# bind 0.0.0.0 rather than localhost. `headless` suppresses the browser
+# auto-launch, which has no meaning on a server. $PORT is left to the
+# environment: Streamlit reads STREAMLIT_SERVER_PORT automatically, and the
+# start command can override with --server.port when needed.
+[server]
+address = "0.0.0.0"
+headless = true
+port = 8501
+
+[browser]
+gatherUsageStats = false

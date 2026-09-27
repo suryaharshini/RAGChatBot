@@ -1,6 +1,16 @@
+# PyTorch CPU-only index.
+#
+# Without this, `pip install torch` on Linux resolves the default CUDA build,
+# which drags in ~2.5GB of nvidia-* wheels. That does not fit a container
+# image and there is no GPU here. The CPU channel publishes a `+cpu` local
+# version, which PEP 440 sorts above the plain release, so pip prefers it.
+--extra-index-url https://download.pytorch.org/whl/cpu
+
 chromadb>=0.5
 sentence-transformers>=3.0
-torch>=2.0
+# Pinned to 2.6.0 because the CPU channel's newest cp39 wheel is 2.6.0; a
+# higher bound resolves to the CUDA build and defeats the index above.
+torch==2.6.0
 numpy>=1.24
 trafilatura>=1.6
 beautifulsoup4>=4.12
